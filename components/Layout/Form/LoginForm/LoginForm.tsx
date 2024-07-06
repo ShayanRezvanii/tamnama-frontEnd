@@ -52,7 +52,7 @@ function LoginForm() {
             <ControlledInput
               register={register}
               id="email"
-              label="Email"
+              label="ایمیل"
               required
               PlaceHolder="Please enter email adress"
               type="email"
@@ -61,7 +61,7 @@ function LoginForm() {
             <ControlledInput
               register={register}
               id="password"
-              label="password"
+              label="کلمه عبور"
               required
               PlaceHolder="Please enter password"
               type="text"
@@ -71,10 +71,11 @@ function LoginForm() {
             <div className="mt-7">
               <PrimaryBtn
                 type="submit"
+                className=" bg-[#3C5B6F] font-semibold text-xl w-full p-2 rounded-xl text-white"
                 isloading={login.isPending}
                 disabled={login.isPending}
               >
-                login
+                ورود به پنل مدیریت
               </PrimaryBtn>
             </div>
           </div>

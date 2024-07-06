@@ -24,7 +24,7 @@ type InputProps<T extends FieldValues> = {
   length?: number;
   disabled?: boolean;
   value?: number | string;
-  onChange?: () => void;
+  onChange?: (value: any) => void;
   shebaField?: boolean;
 };
 
@@ -118,7 +118,7 @@ const ControlledInput = <T extends FieldValues>({
             if (setValue) {
               setValue(id, e.target.value);
               if (onChange) {
-                onChange(); // Call the onChange prop if provided
+                onChange(e); // Call the onChange prop if provided
               }
             }
           }}

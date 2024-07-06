@@ -20,7 +20,7 @@ function Page() {
   return (
     <div className=" w-full flex flex-col justify-center items-center min-h-screen">
       <div className=" w-full max-w-[320px]">
-        <h1>Tamnama Panel</h1>
+        <h1 className=" text-center">Tamnama Panel</h1>
         <LoginForm />
       </div>
     </div>
