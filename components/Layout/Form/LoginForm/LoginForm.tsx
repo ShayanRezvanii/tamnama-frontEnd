@@ -17,15 +17,19 @@ import { Login } from "@/util/api/login/login";
 import { SubmitHandler } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
 import { useRouter } from "next/navigation";
-
+import Cookies from "js-cookie";
 function LoginForm() {
   const router = useRouter();
   const [reset, setReset] = useState();
   const login = useMutation({
     mutationFn: Login,
     onSuccess(data, variables, context) {
+      console.log(data);
+
       setTimeout(() => {
-        router.refresh();
+        // router.refresh();
+        Cookies.set("shopName", data.name);
+        router.push(`/${data.name}`);
       }, 2000);
     },
     onError(error, variables, context) {

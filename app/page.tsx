@@ -5,7 +5,7 @@ import Image from "next/image";
 import { redirect } from "next/navigation";
 import { useSestion } from "@/util/session";
 import Welcome from "@/components/pages/Home/Welcome";
-import { useEffect } from "react";
+import Cookies from "js-cookie";
 
 export default function Home() {
   const Session = useSestion();
@@ -15,13 +15,5 @@ export default function Home() {
     redirect("/login");
   }
 
-  return (
-    <>
-      <MainLayout>
-        <div>
-          <Welcome />
-        </div>
-      </MainLayout>
-    </>
-  );
+  return <div>Landing</div>;
 }

@@ -1,11 +1,13 @@
 /** @format */
 import { z } from "zod";
 
-const categorySchema = z.object({
-  name: z.string(),
+const SelectCodeSchema = z.object({
+  name: z.string().min(1),
+  value: z.string().min(1),
 });
 export const addCategorySchema = z.object({
   categories: z.string(),
+  Icon: SelectCodeSchema,
 });
 
 // generate form types from zod validation schema

@@ -5,16 +5,16 @@ import Cookies from "js-cookie";
 
 export const deleteCategory = async ({
   shopName,
-  category,
+  id,
 }: {
   shopName: string;
-  category: string;
+  id: number;
 }) => {
   const response = await axiosInstance.post(
     `/category/deleteCategory?shopName=${shopName}`,
     {
       shopName: shopName,
-      categoryName: category,
+      categoryId: id,
     }
   );
   if (response.status === 200) {
