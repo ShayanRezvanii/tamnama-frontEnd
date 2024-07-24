@@ -5,8 +5,8 @@ import CategoryCard from "@/components/Layout/Cards/CategoryCard";
 import ProductCard from "@/components/Layout/Cards/ProductCard";
 import useGetCategoryList from "@/util/hooks/Category/GetCategory";
 import useGetProductList from "@/util/hooks/Products/GetProduct";
-import { useRouter } from "next/navigation";
-import React from "react";
+import { redirect, useRouter } from "next/navigation";
+import React, { useEffect } from "react";
 
 function Page({
   params,
@@ -16,10 +16,17 @@ function Page({
     slug: string;
   };
 }) {
+  const router = useRouter();
   const getProductList = useGetProductList(params.cafeName);
   console.log(getProductList);
-  const router = useRouter();
 
+  const getCategoryList = useGetCategoryList(params.cafeName);
+
+  useEffect(() => {
+    if (getCategoryList?.data?.allCategory?.categories.length <= 0) {
+      redirect(`/${params.cafeName}/category`);
+    }
+  });
   return (
     <div className=" w-full  px-10 ">
       <div className=" flex justify-between mt-24 items-center">

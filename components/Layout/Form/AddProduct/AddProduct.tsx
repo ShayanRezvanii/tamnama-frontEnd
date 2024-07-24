@@ -173,6 +173,7 @@ function AddProduct({ param }: { param: string }) {
                     setValue={setValue}
                     register={register}
                     param={param}
+                    fileType="file"
                     path={(e: any) => setPathImage(e.file)}
                     onChange={(e) => console.log(e)}
                     // data={(e: any) => console.log(e)}

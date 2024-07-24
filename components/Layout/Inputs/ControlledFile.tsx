@@ -15,6 +15,7 @@ interface InputProps<T extends FieldValues> {
   setValue?: (id: Path<T>, value: any) => void;
   path?: (value: any) => void;
   param: string;
+  fileType: string;
   data?: (value: any) => void;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
@@ -26,6 +27,7 @@ const ControlledFile = <T extends FieldValues>({
   param,
   register,
   required,
+  fileType,
   setValue,
   path,
   data,
@@ -64,6 +66,7 @@ const ControlledFile = <T extends FieldValues>({
     addImageMutation.mutate({
       image: selectedFile,
       name: param,
+      fileType: fileType,
     });
     if (setValue) {
       setValue(id, selectedFile);
