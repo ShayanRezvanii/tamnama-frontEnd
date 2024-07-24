@@ -45,10 +45,9 @@ function AddProfile({ param }: { param?: string }) {
       setResult(true);
       setAdded(false);
       queryClient.invalidateQueries({ queryKey: ["categoryList"] });
+      queryClient.invalidateQueries({ queryKey: ["userProfile"] });
       setReset(initialValues);
       setCats([]);
-
-      router.replace(`/${param}/`);
     },
     onError: (error, variables, context) => {
       setResult(true);

@@ -4,7 +4,7 @@ import React from "react";
 
 function Welcome() {
   return (
-    <div className=" w-full h-screen flex justify-center mt-52 ">
+    <div className=" w-full h-screen flex justify-center flex-col items-center ">
       <div className=" flex flex-col gap-3">
         <h1 className=" text-4xl select-none text-[#153448] font-semibold">
           به پنل مدیریت خود خوش آمدید

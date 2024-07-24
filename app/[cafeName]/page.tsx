@@ -5,7 +5,7 @@ import React from "react";
 
 function page({ params }: { params: { slug: string } }) {
   return (
-    <div>
+    <div className=" w-full  h-screen  overflow-y-hidden">
       <Welcome />
     </div>
   );

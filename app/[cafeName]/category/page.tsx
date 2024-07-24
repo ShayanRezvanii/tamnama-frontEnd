@@ -21,9 +21,9 @@ function Page({
   console.log(getCategoryList.data);
 
   return (
-    <div className=" w-full  px-10 ">
+    <div className=" w-full  px-28 ">
       <div className=" flex justify-between mt-24 items-center">
-        <div>
+        <div className="border-r px-4">
           <h1 className=" text-[#153448] text-2xl font-semibold ">
             دسته بندی ها
           </h1>
@@ -32,6 +32,7 @@ function Page({
             دسته را تغییر دهید.
           </span>
         </div>
+
         <div>
           <PrimaryBtn
             onClick={() => router.push(`/${params.cafeName}/category/add`)}
