@@ -30,11 +30,6 @@ function Navbar({ param }: { param?: string }) {
   const getCategoryList = useGetCategoryList(pa);
   const getProfile = useGetUserProfile(pa);
 
-  useEffect(() => {
-    const name = Cookies.get("shopName");
-    setShopName(name);
-  }, []);
-
   console.log(getProfile?.data?.profile?.imageURL);
 
   return (
@@ -66,13 +61,13 @@ function Navbar({ param }: { param?: string }) {
         </svg>
       )}
       <ul className=" flex flex-col gap-6">
-        <Link href={`/${shopName}`}>
+        <Link href={`/${getProfile?.data?.profile?.shopName}`}>
           <li className=" cursor-pointer hover:bg-[#3C5B6F]/70  flex gap-x-3 p-2 rounded-lg py-2 ">
             <Home variant="Bold" className="text-white" />
             <p className=" text-xl text-white font-semibold">خانه</p>
           </li>
         </Link>
-        <Link href={`/${shopName}/category`}>
+        <Link href={`/${getProfile?.data?.profile?.shopName}/category`}>
           <li className=" cursor-pointer  rounded-lg flex gap-3 hover:bg-[#3C5B6F]/70 p-2  duration-300 py-2 ">
             <Category variant="Bold" className="text-white" />
 
@@ -94,7 +89,7 @@ function Navbar({ param }: { param?: string }) {
             </div>
           </li>
         ) : (
-          <Link href={`/${shopName}/products `}>
+          <Link href={`/${getProfile?.data?.profile?.shopName}/products `}>
             <li
               className={` rounded-lg flex gap-3 hover:bg-[#3C5B6F]/70 p-2  duration-300 py-2 `}
             >
@@ -104,7 +99,7 @@ function Navbar({ param }: { param?: string }) {
           </Link>
         )}
 
-        <Link href={`/${shopName}/profile`}>
+        <Link href={`/${getProfile?.data?.profile?.shopName}/profile`}>
           <li
             className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#3C5B6F]/70 p-2  duration-300 py-2 `}
           >

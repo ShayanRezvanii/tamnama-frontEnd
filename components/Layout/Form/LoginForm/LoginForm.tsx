@@ -16,7 +16,7 @@ import {
 import { Login } from "@/util/api/login/login";
 import { SubmitHandler } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 function LoginForm() {
   const router = useRouter();
@@ -26,11 +26,14 @@ function LoginForm() {
     onSuccess(data, variables, context) {
       console.log(data);
 
-      setTimeout(() => {
-        // router.refresh();
-        Cookies.set("shopName", data.name);
-        router.push(`/${data.name}`);
-      }, 2000);
+      if (data.name) {
+        setTimeout(() => {
+          // router.refresh();
+          // Cookies.set("shopName", data.name);
+          // router.push(`/${data.name}`);
+          router.push(`${data.name}`);
+        }, 2000);
+      }
     },
     onError(error, variables, context) {
       console.log(error);

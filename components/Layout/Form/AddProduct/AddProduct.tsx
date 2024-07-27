@@ -100,8 +100,8 @@ function AddProduct({ param }: { param: string }) {
         {({ register, formState: { errors }, setValue, control }) => (
           <div>
             <div className="flex flex-col justify-center items-center xl:flex-row lg:gap-0">
-              <div className="w-full flex flex-col gap-4 items-center justify-center">
-                <div className="w-full flex flex-col  gap-x-4">
+              <div className="w-full flex flex-col gap-4 items-start justify-center">
+                <div className="w-full flex   gap-x-4">
                   <ControlledInput
                     register={register}
                     id="title"
@@ -109,7 +109,7 @@ function AddProduct({ param }: { param: string }) {
                     required
                     onChange={(e) => setInputValue(e.target.value)}
                     setValue={setValue}
-                    PlaceHolder="نام محصول را وارد کنید"
+                    PlaceHolder="نام را وارد کنید"
                     type="text"
                     error={errors.title?.message}
                   />
@@ -120,12 +120,12 @@ function AddProduct({ param }: { param: string }) {
                     required
                     onChange={(e) => setInputValue(e.target.value)}
                     setValue={setValue}
-                    PlaceHolder="توضیحات محصول خود را وارد نمایید"
+                    PlaceHolder="توضیحات را وارد نمایید"
                     type="text"
                     error={errors.description?.message}
                   />
                 </div>
-                <div className="w-full flex flex-col  gap-x-4">
+                <div className="w-full flex   gap-x-4">
                   {/* <ControlledInput
                     register={register}
                     id="category"
@@ -168,19 +168,19 @@ function AddProduct({ param }: { param: string }) {
                     type="text"
                     error={errors.price?.message}
                   />
-                  <ControlledFile
-                    label="تصویر محصول"
-                    setValue={setValue}
-                    register={register}
-                    param={param}
-                    fileType="file"
-                    path={(e: any) => setPathImage(e.file)}
-                    onChange={(e) => console.log(e)}
-                    // data={(e: any) => console.log(e)}
-                    id="imageUrl"
-                    error={errors.imageUrl?.message}
-                  />
                 </div>
+                <ControlledFile
+                  label="تصویر محصول"
+                  setValue={setValue}
+                  register={register}
+                  param={param}
+                  fileType="file"
+                  path={(e: any) => setPathImage(e.file)}
+                  onChange={(e) => console.log(e)}
+                  // data={(e: any) => console.log(e)}
+                  id="imageUrl"
+                  error={errors.imageUrl?.message}
+                />
               </div>
             </div>
 

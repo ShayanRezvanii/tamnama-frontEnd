@@ -6,6 +6,7 @@ import PrimaryBtn from "../Buttons/PrimaryBtn";
 import axios from "axios";
 import { useMutation } from "@tanstack/react-query";
 import { addingImage } from "@/util/api/addProduct/addImage";
+import { DocumentUpload } from "iconsax-react";
 interface InputProps<T extends FieldValues> {
   label: string;
   id: Path<T>;
@@ -78,25 +79,32 @@ const ControlledFile = <T extends FieldValues>({
 
   return (
     <div className="form-control flex my-2">
-      <label htmlFor={id}>{label}</label>
-      <input
-        type="file"
-        id={id}
-        {...register(id, { required })}
-        // onChange={(e) => {
-        //   if (onChange) {
-        //     onChange(e);
-        //   }
-        //   if (setValue) {
-        //     setValue(id, e.target.files?.[0]);
-        //   }
-        // }}
+      <div className=" w-full flex flex-col  gap-4">
+        <label htmlFor={id}>{label}</label>
+        <div className=" flex w-full flex-col gap-4  max-w-[220px]">
+          <input
+            type="file"
+            id={id}
+            {...register(id, { required })}
+            // onChange={(e) => {
+            //   if (onChange) {
+            //     onChange(e);
+            //   }
+            //   if (setValue) {
+            //     setValue(id, e.target.files?.[0]);
+            //   }
+            // }}
 
-        onChange={onFileChange}
-      />
-      <PrimaryBtn onClick={onFileUpload}>Upload</PrimaryBtn>
+            onChange={onFileChange}
+          />
+          <PrimaryBtn onClick={onFileUpload}>
+            <DocumentUpload />
+            {/* آپلود تصویر */}
+          </PrimaryBtn>
+        </div>
 
-      {error && <span className="error">{error}</span>}
+        {error && <span className="error">{error}</span>}
+      </div>
     </div>
   );
 };

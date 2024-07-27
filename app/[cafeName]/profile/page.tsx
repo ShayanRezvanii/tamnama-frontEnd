@@ -6,7 +6,7 @@ import React from "react";
 
 function page({ params }: { params: { slug: string } }) {
   return (
-    <div className=" w-full  px-10 ">
+    <div className=" w-full  px-56  mx-auto ">
       <h1 className=" text-[#153448] text-2xl my-24 font-semibold ">
         نمای کافه
       </h1>

@@ -100,12 +100,14 @@ const ControlledColorPicker = <T extends FieldValues>({
         {/* {required ? <span className="text-error-600">*</span> : null} */}
       </label>
       <div
-        className={`w-full h-fit   relative   flex items-center  overflow-hidden justify-center `}
+        className={`w-full h-fit  border-gray-400 ${
+          isOpen ? " border-gray-200" : null
+        } rounded-lg border  relative   flex items-center  overflow-hidden justify-center `}
       >
         <div className=" w-full flex flex-col gap-3">
           <div
             onClick={() => setIsOpen(!isOpen)}
-            className=" w-full max-w-[220px] text-center justify-center text-gray-400 cursor-pointer rounded-xl h-10 border bg-gradient-to-l   flex flex-col"
+            className=" w-full text-center justify-center text-gray-400 cursor-pointer rounded-xl h-10  bg-gradient-to-l   flex flex-col"
           >
             {label}
           </div>
@@ -115,7 +117,7 @@ const ControlledColorPicker = <T extends FieldValues>({
                 initial={{ opacity: 0, translateY: 30 }}
                 animate={{ opacity: 1, translateY: 0 }}
                 transition={{ duration: 0.2 }}
-                className=" select-none overflow-y-scroll custom-scrollbar px-2 py-2 h-fit md:h-fit w-full bg-white dark:bg-dark-100 mt-2 rounded-lg shadow-lg z-30"
+                className=" select-none overflow-y-scroll flex justify-center items-center  custom-scrollbar p-10 h-fit md:h-fit w-full bg-white mt-2 rounded-lg shadow-lg z-30"
               >
                 <HexAlphaColorPicker
                   color={color}

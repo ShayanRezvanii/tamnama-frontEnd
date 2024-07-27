@@ -13,8 +13,11 @@ function Page({
   };
 }) {
   return (
-    <div className=" w-full flex justify-center  min-h-screen ">
-      <div className=" w-full max-w-[440px] mt-20 ">
+    <div className=" w-full flex  flex-col justify-start px-56 min-h-screen ">
+      <h1 className=" text-[#153448] text-2xl my-24 font-semibold ">
+        ویرایش محصول
+      </h1>
+      <div className=" w-full ">
         <EditProduct param={params} />
       </div>
     </div>

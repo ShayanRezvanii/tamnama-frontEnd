@@ -14,8 +14,12 @@ function Page({
   console.log(params);
 
   return (
-    <div className=" w-full flex justify-center  min-h-screen ">
-      <div className=" w-full max-w-[440px] mt-20 ">
+    <div className=" w-full flex  mx-auto px-56  min-h-screen ">
+      <div className=" w-full   ">
+        <h1 className=" text-[#153448] text-2xl my-24 font-semibold ">
+          اضافه کردن محصول
+        </h1>
+
         <AddProduct param={params.cafeName} />
       </div>
     </div>

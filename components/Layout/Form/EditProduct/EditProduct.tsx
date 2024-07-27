@@ -16,6 +16,7 @@ import { editProduct } from "@/util/api/editProduct/editProduct";
 import ControlledSelect from "../../Inputs/ControlledSelect";
 import useGetCategoryList from "@/util/hooks/Category/GetCategory";
 import useGetSingleProduct from "@/util/hooks/Products/GetOneProduct";
+import path from "path";
 
 function EditProduct({ param }: any) {
   const [reset, setReset] = useState({});
@@ -28,6 +29,7 @@ function EditProduct({ param }: any) {
   const singleProduct = useGetSingleProduct(param.id);
   const getCategoryList = useGetCategoryList(param.cafeName);
   const [uploadedImage, setUploadedImage] = useState();
+  const [added, setAdded] = useState(false);
   const [categories, setCategories] = useState<
     { name: string; value: string | number }[]
   >([]);
@@ -73,19 +75,21 @@ function EditProduct({ param }: any) {
   });
 
   const onSubmit: SubmitHandler<addProductSchemaType> = async (data) => {
-    editProductMutation.mutate({
-      id: param.id,
-      shopName: param.cafeName,
-      category: data.category
-        ? data.category.value
-        : initialValues.category.value,
-      imageURL: uploadedImage || initialValues.imageURL,
-      price: data.price ? data.price : initialValues.price,
-      description: data.description
-        ? data.description
-        : initialValues.description,
-      title: data.title ? data.title : initialValues.title,
-    });
+    if (added && uploadedImage) {
+      editProductMutation.mutate({
+        id: param.id,
+        shopName: param.cafeName,
+        category: data.category
+          ? data.category.value
+          : initialValues.category.value,
+        imageURL: uploadedImage,
+        price: data.price ? data.price : initialValues.price,
+        description: data.description
+          ? data.description
+          : initialValues.description,
+        title: data.title ? data.title : initialValues.title,
+      });
+    }
   };
 
   const handleClick = () => {
@@ -116,8 +120,11 @@ function EditProduct({ param }: any) {
         {({ register, formState: { errors }, setValue, control }) => (
           <div>
             <div className="flex flex-col justify-center items-center xl:flex-row lg:gap-0">
-              <div className="w-full flex flex-col gap-4 items-center justify-center">
-                <div className="w-full flex flex-col gap-x-4">
+              <div
+                className="w-full flex flex-col gap-4 items-start justify-start
+              "
+              >
+                <div className="w-full flex gap-x-4">
                   <ControlledInput
                     register={register}
                     id="title"
@@ -141,7 +148,7 @@ function EditProduct({ param }: any) {
                     error={errors.description?.message}
                   />
                 </div>
-                <div className="w-full flex flex-col gap-x-4">
+                <div className="w-full flex gap-x-4">
                   <Controller
                     control={control}
                     name="category"
@@ -173,18 +180,20 @@ function EditProduct({ param }: any) {
                     type="text"
                     error={errors.price?.message}
                   />
-                  <ControlledFile
-                    label="تصویر محصول"
-                    setValue={setValue}
-                    register={register}
-                    param={param.cafeName}
-                    path={(e: any) => {
-                      setUploadedImage(e.file);
-                    }}
-                    id="imageUrl"
-                    error={errors.imageUrl?.message}
-                  />
                 </div>
+                <ControlledFile
+                  label="تصویر محصول"
+                  setValue={setValue}
+                  register={register}
+                  fileType="file"
+                  param={param.cafeName}
+                  path={(e: any) => {
+                    setUploadedImage(e.file);
+                    setAdded(true);
+                  }}
+                  id="imageUrl"
+                  error={errors.imageUrl?.message}
+                />
               </div>
             </div>
 

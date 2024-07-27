@@ -79,15 +79,15 @@ const FormDropDown: React.FC<DropDownType> = ({
       {!isSearch ? (
         <>
           <div
-            className={` ${
+            className={` bg-gray-50${
               disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"
             } ${
               error && !disabled
                 ? "border-red-500 dark:border-red-400"
-                : "border-gray-100 dark:border-white/10 focus:border-gray-600 dark:hover:border-white/25 dark:focus:border-white/45 hover:border-gray-300"
+                : "border-gray-400 border  focus:border-gray-600   hover:border-gray-300"
             } ${
               isOpen ? "border-gray-100" : "border-gray-100"
-            } border dark:border-gray-400 text-sm bg-white dark:bg-dark-100 text-nowrap md:text-base text-gray-300 select-none dark:text-gray-200 duration-200 text-center w-full flex items-center justify-between outline-none rounded-lg font-semibold px-3 py-3`}
+            } border border-gray-400 text-sm bg-white dark:bg-dark-100 text-nowrap md:text-base text-gray-300 select-none  duration-200 text-center w-full flex items-center justify-between outline-none rounded-lg font-semibold px-3 py-3`}
             onClick={() => setIsOpen(!disabled && !isOpen)}
           >
             <p
@@ -116,7 +116,7 @@ const FormDropDown: React.FC<DropDownType> = ({
               {options.map((item, index) => (
                 <div
                   key={index}
-                  className="py-2 pr-4 text-gray-600 text-sm md:text-base text-right cursor-pointer dark:hover:text-gray-25 dark:hover:bg-white/20 hover:bg-gray-50 hover:text-primary-600 rounded-lg duration-150"
+                  className="py-2 pr-4 text-gray-600 text-sm md:text-base text-right cursor-pointer dark:hover:text-gray-25  hover:bg-gray-50 hover:text-primary-600 rounded-lg duration-150"
                   onClick={() => handleSelect(item)}
                 >
                   <div className=" flex items-center  justify-between">

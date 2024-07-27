@@ -12,7 +12,6 @@ const SelectCodeSchema = z.object({
 
 export const addProfileSchema = z.object({
   firstColor: z.string().min(1),
-  secondColor: z.string(),
   phone: z.string(),
   workTime: z
     .object({

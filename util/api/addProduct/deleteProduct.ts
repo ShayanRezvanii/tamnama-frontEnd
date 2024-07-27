@@ -3,22 +3,9 @@
 import axiosInstance from "@/util/axiosInstance";
 import Cookies from "js-cookie";
 
-export const AddingProfile = async ({
-  firstColor,
-  workTime,
-  phone,
-  imageURL,
-}: {
-  firstColor: string;
-  phone: string;
-  workTime: string;
-  imageURL: string;
-}) => {
-  const response = await axiosInstance.post(`/users/profile`, {
-    firstColor,
-    workTime,
-    phone,
-    imageURL,
+export const deleteProduct = async ({ id }: { id: number }) => {
+  const response = await axiosInstance.post(`/products/remove`, {
+    productId: id,
   });
   if (response.status === 200) {
     return response.data;

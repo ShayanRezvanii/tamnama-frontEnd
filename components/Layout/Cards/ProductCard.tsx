@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import Image from "next/image";
 import Link from "next/link";
+import { deleteProduct } from "@/util/api/addProduct/deleteProduct";
 interface CategoryCardProps {
   data: any;
 }
@@ -23,11 +24,11 @@ function ProductCard({ data }: CategoryCardProps) {
   };
 
   const [result, setResult] = useState(false);
-  const deleteCategoryMutation = useMutation({
-    mutationFn: deleteCategory,
+  const deleteProductMutation = useMutation({
+    mutationFn: deleteProduct,
     onSuccess: (data, variables, context) => {
       setResult(true);
-      queryClient.invalidateQueries({ queryKey: ["categoryList"] });
+      queryClient.invalidateQueries({ queryKey: ["productList"] });
       setReset(initialValues);
       setCats([]);
     },
@@ -40,25 +41,21 @@ function ProductCard({ data }: CategoryCardProps) {
   console.log(data);
 
   return (
-    <Link
-      href={`products/${data._id}`}
-      className=" flex relative flex-col  justify-center items-center group "
-    >
-      <div className="  bg-white border shadow-lg duration-200 cursor-pointer hover:bg-[#DFD0B8]/70 w-full rounded-xl">
+    <div className=" flex relative flex-col  justify-center items-center group ">
+      <div className="  bg-white border shadow-lg duration-200 cursor-pointer hover:bg-[#DFD0B8]/70 w-full z-40 rounded-xl">
         {/* delete product to future */}
-        {/* <div
+        <div
           onClick={() => {
-            deleteCategoryMutation.mutate({
-              shopName: data.shopName,
-              category: data.category,
+            deleteProductMutation.mutate({
+              id: data._id,
             });
           }}
           className=" bg-white rounded-full z-30 group-hover:block hidden  duration-200 absolute shadow-lg cursor-pointer left-[-10px] top-[-10px]"
         >
           <Add className=" rotate-45" />
-        </div> */}
+        </div>
 
-        <div className=" w-full flex flex-col">
+        <Link href={`products/${data._id}`} className=" w-full flex flex-col">
           <div className=" w-full  h-40 relative ">
             <Image
               alt="product-image"
@@ -79,9 +76,9 @@ function ProductCard({ data }: CategoryCardProps) {
             </div>
             <p className=" text-lg text-left text-[#153448]">{data.price}T</p>
           </div>
-        </div>
+        </Link>
       </div>
-    </Link>
+    </div>
   );
 }
 

@@ -26,7 +26,6 @@ function AddProfile({ param }: { param?: string }) {
   const [inputValue, setInputValue] = useState<string>("");
   const [cats, setCats] = useState<string[]>([]);
   const [firstColor, setFirstColor] = useState();
-  const [secondColor, setSecondColor] = useState();
   const initialValues = {
     shopName: "",
     categories: "",
@@ -61,7 +60,6 @@ function AddProfile({ param }: { param?: string }) {
     if (pathImage && !added) {
       addProfileMutation.mutate({
         firstColor: data.firstColor,
-        secondColor: data.secondColor,
         workTime: data.workTime.from.value + "-" + data.workTime.to.value,
         phone: data.phone,
         imageURL: pathImage,
@@ -89,10 +87,10 @@ function AddProfile({ param }: { param?: string }) {
       >
         {({ register, formState: { errors }, setValue, control }) => (
           <div>
-            <div className="flex flex-col justify-center items-center xl:flex-row lg:gap-0">
+            <div className="flex flex-col justify-center items-center  xl:flex-row lg:gap-0">
               <div className="w-full flex flex-col gap-4 items-center justify-center">
-                <div className="w-full flex flex-col  gap-x-4">
-                  <div className=" w-full flex justify-between">
+                <div className="w-full flex flex-col ">
+                  <div className=" w-full gap-4 max-w-[480px] flex justify-between">
                     <ControlledColorPicker
                       register={register}
                       id="firstColor"
@@ -104,21 +102,10 @@ function AddProfile({ param }: { param?: string }) {
                       type="text"
                       error={errors.firstColor?.message}
                     />
-                    <ControlledColorPicker
-                      register={register}
-                      id="secondColor"
-                      label="رنگ ثانویه"
-                      required
-                      onChange={(e) => setSecondColor(e?.target?.value)}
-                      setValue={setValue}
-                      PlaceHolder="توضیحات محصول خود را وارد نمایید"
-                      type="text"
-                      error={errors.secondColor?.message}
-                    />
                   </div>
 
                   <div className=" w-full  justify-between flex flex-col gap-2">
-                    <div className=" w-full flex ">
+                    <div className=" w-full gap-4 flex ">
                       <Controller
                         control={control}
                         name="workTime.from"
@@ -192,8 +179,8 @@ function AddProfile({ param }: { param?: string }) {
               </div>
             </div>
 
-            <div className="w-full xl:justify-end flex xl:items-center">
-              <div className="w-full">
+            <div className="w-full justify-end items-end flex">
+              <div className="w-full  max-w-[140px]">
                 <PrimaryBtn
                   type="submit"
                   onClick={handleClick}
