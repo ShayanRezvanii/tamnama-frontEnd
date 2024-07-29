@@ -8,15 +8,18 @@ export const AddingProfile = async ({
   workTime,
   phone,
   imageURL,
+  address,
 }: {
   firstColor: string;
   phone: string;
   workTime: string;
   imageURL: string;
+  address: string;
 }) => {
   const response = await axiosInstance.post(`/users/profile`, {
     firstColor,
     workTime,
+    address,
     phone,
     imageURL,
   });

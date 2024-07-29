@@ -62,6 +62,7 @@ function AddProfile({ param }: { param?: string }) {
         firstColor: data.firstColor,
         workTime: data.workTime.from.value + "-" + data.workTime.to.value,
         phone: data.phone,
+        address: data.address,
         imageURL: pathImage,
       });
       setAdded(true);
@@ -157,6 +158,19 @@ function AddProfile({ param }: { param?: string }) {
                         PlaceHolder="توضیحات محصول خود را وارد نمایید"
                         type="text"
                         error={errors.phone?.message}
+                      />
+                    </div>
+                    <div className=" w-full">
+                      <ControlledInput
+                        register={register}
+                        id="address"
+                        label="آدرس"
+                        required
+                        onChange={(e) => setInputValue(e.target.value)}
+                        setValue={setValue}
+                        PlaceHolder="توضیحات محصول خود را وارد نمایید"
+                        type="text"
+                        error={errors.address?.message}
                       />
                     </div>
                   </div>

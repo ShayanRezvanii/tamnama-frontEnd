@@ -63,6 +63,7 @@ function AddCategory({ param }: { param: string }) {
   const onSubmit: SubmitHandler<addCategorySchemaType> = async (data) => {
     addCategoryMutation.mutate({
       shopName: param,
+
       categories: cats,
     });
   };
