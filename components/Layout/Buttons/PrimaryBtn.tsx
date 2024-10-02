@@ -6,7 +6,7 @@ import React from "react";
 function PrimaryBtn({ isloading, children, ...props }: BtnProps) {
   return (
     <button
-      className={`  disabled:bg-[#153448]/20 flex items-center justify-center gap-2  select-none focus:bg-primary-500 w-full h-[48px]  px-6 duration-200 rounded-lg font-semibold hover:bg-primary-400 bg-[#153448] text-white text-sm lg:text-base ${
+      className={`  disabled:bg-[#153448]/20 flex items-center justify-center gap-2  select-none focus:bg-primary-500 w-full h-[48px]  px-6 duration-200 rounded-lg font-semibold hover:bg-primary-400 bg-[#FF6600] hover:bg-[#F3F0CA] shadow-lg  hover:shadow-[#E1AA74] hover:text-[#E1AA74] text-[#F3F0CA] text-sm lg:text-base ${
         isloading ? "disabled:cursor-wait" : "disabled:cursor-not-allowed"
       }`}
       {...props}

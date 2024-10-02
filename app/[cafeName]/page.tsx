@@ -1,7 +1,8 @@
 /** @format */
-
+"use client";
 import Welcome from "@/components/pages/Home/Welcome";
-import React from "react";
+import { useRouter } from "next/navigation";
+import React, { useEffect } from "react";
 
 function page({ params }: { params: { slug: string } }) {
   return (

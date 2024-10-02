@@ -9,7 +9,6 @@ import Cookies from "js-cookie";
 
 export default function Home() {
   const Session = useSestion();
-  console.log(Session);
 
   if (!Session) {
     redirect("/login");

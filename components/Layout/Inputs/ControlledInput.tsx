@@ -93,7 +93,7 @@ const ControlledInput = <T extends FieldValues>({
         <input
           disabled={disabled && disabled}
           placeholder={PlaceHolder}
-          className={`p-2 w-full h-full text-sm md:text-base bg-gray-50    outline-none flex-1 rounded-lg border text-gray-600  placeholder:text-gray-300 bg-transparent appearance-none disabled:opacity-50 disabled:cursor-not-allowed duration-200 ${
+          className={`p-2 w-full h-full text-sm md:text-base bg-white    outline-none flex-1 rounded-lg border text-gray-600  placeholder:text-gray-300 bg-transparent appearance-none disabled:opacity-50 disabled:cursor-not-allowed duration-200 ${
             type === "password" ? "pl-12" : ""
           }  ${
             error && !disabled

@@ -18,10 +18,24 @@ import {
 } from "@/util/config/validation/addProfileSchema";
 import ControlledColorPicker from "../../Inputs/ControlledColorPicker";
 import { times } from "@/util/data/time";
+import Cookies from "js-cookie";
+
 function AddProfile({ param }: { param?: string }) {
   const [reset, setReset] = useState({});
   const formRef = useRef<any>();
   const router = useRouter();
+  const [shopName, setShopName] = useState<string | null>();
+
+  useEffect(() => {
+    const shopName = Cookies.get("shopName");
+    setShopName(shopName);
+
+    if (!shopName) {
+      Cookies.remove("token");
+      redirect("/login");
+    }
+  }, []);
+
   const queryClient = useQueryClient();
   const [inputValue, setInputValue] = useState<string>("");
   const [cats, setCats] = useState<string[]>([]);
@@ -30,6 +44,7 @@ function AddProfile({ param }: { param?: string }) {
     shopName: "",
     categories: "",
   };
+
   const [added, setAdded] = useState(false);
   const [result, setResult] = useState(false);
   const [pathImage, setPathImage] = useState<string>("");
@@ -38,15 +53,19 @@ function AddProfile({ param }: { param?: string }) {
     { name: string; value: string | number }[]
   >([]);
 
+  console.log(shopName);
+
   const addProfileMutation = useMutation({
     mutationFn: AddingProfile,
     onSuccess: (data, variables, context) => {
       setResult(true);
       setAdded(false);
+
       queryClient.invalidateQueries({ queryKey: ["categoryList"] });
       queryClient.invalidateQueries({ queryKey: ["userProfile"] });
       setReset(initialValues);
       setCats([]);
+      router.push(`/${shopName}`);
     },
     onError: (error, variables, context) => {
       setResult(true);
@@ -91,7 +110,7 @@ function AddProfile({ param }: { param?: string }) {
             <div className="flex flex-col justify-center items-center  xl:flex-row lg:gap-0">
               <div className="w-full flex flex-col gap-4 items-center justify-center">
                 <div className="w-full flex flex-col ">
-                  <div className=" w-full gap-4 max-w-[480px] flex justify-between">
+                  <div className=" w-full gap-4 max-w-[280px] flex justify-between">
                     <ControlledColorPicker
                       register={register}
                       id="firstColor"
@@ -194,11 +213,11 @@ function AddProfile({ param }: { param?: string }) {
             </div>
 
             <div className="w-full justify-end items-end flex">
-              <div className="w-full  max-w-[140px]">
+              <div className="w-full   max-w-[140px]">
                 <PrimaryBtn
                   type="submit"
                   onClick={handleClick}
-                  // isloading={addProductMutation.isPending}
+                  isloading={addProfileMutation.isPending}
                   // disabled={addProductMutation.isPending || cats.length <= 0}
                 >
                   تایید

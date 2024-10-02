@@ -29,22 +29,28 @@ function Navbar({ param }: { param?: string }) {
   const pa = path.split("/")[1];
   const getCategoryList = useGetCategoryList(pa);
   const getProfile = useGetUserProfile(pa);
+  const pathApp = path.split("/")[2];
 
-  console.log(getProfile?.data?.profile?.imageURL);
+  useEffect(() => {
+    const shopName = Cookies.get("shopName");
+    setShopName(shopName);
+  }, []);
+  console.log(pathApp);
+  console.log(pa);
 
   return (
-    <div className=" w-full max-w-[250px] bg-[#3A4750] backdrop-blur-sm min-h-screen items-center  p-10 flex flex-col justify-between ">
+    <div className=" w-full  bg-[#525151] max-w-[280px] h-full items-center border-l border-[#F5F5F5]/20 p-10 flex flex-col justify-between ">
       {getProfile?.data?.profile ? (
         <div className=" flex-col flex gap-4 justify-center items-center">
-          <div className=" w-24 h-24 relative">
+          <div className=" w-28 h-28 relative shadow-lg rounded-2xl">
             <Image
               src={`http://localhost:8000/api/${getProfile?.data?.profile?.imageURL}`}
               alt="profile"
               fill
-              className=" rounded-full"
+              className=" rounded-2xl"
             />
           </div>
-          <p className=" font-semibold text-white">
+          <p className=" font-semibold text-[#F5F5F5]">
             {getProfile?.data?.profile?.shopName}
           </p>
         </div>
@@ -62,16 +68,23 @@ function Navbar({ param }: { param?: string }) {
       )}
       <ul className=" flex flex-col gap-6">
         <Link href={`/${getProfile?.data?.profile?.shopName}`}>
-          <li className=" cursor-pointer hover:bg-[#3C5B6F]/70  flex gap-x-3 p-2 rounded-lg py-2 ">
-            <Home variant="Bold" className="text-white" />
-            <p className=" text-xl text-white font-semibold">خانه</p>
+          <li
+            className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300 
+              ${pathApp === undefined ? "bg-[#FF6600]" : null}`}
+          >
+            <Home variant="Bold" className="text-[#F5F5F5]" />
+            <p className=" text-xl text-[#F5F5F5] font-semibold">خانه</p>
           </li>
         </Link>
         <Link href={`/${getProfile?.data?.profile?.shopName}/category`}>
-          <li className=" cursor-pointer  rounded-lg flex gap-3 hover:bg-[#3C5B6F]/70 p-2  duration-300 py-2 ">
-            <Category variant="Bold" className="text-white" />
+          <li
+            className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300  ${
+              pathApp === "category" ? "bg-[#FF6600]" : null
+            } `}
+          >
+            <Category variant="Bold" className="text-[#F5F5F5]" />
 
-            <p className=" text-white outline-none text-xl  font-semibold">
+            <p className=" text-[#F5F5F5] outline-none text-xl  font-semibold">
               دسته بندی ها
             </p>
           </li>
@@ -82,8 +95,8 @@ function Navbar({ param }: { param?: string }) {
           <li
             className={` relative rounded-lg flex gap-3 p-2 group cursor-pointer duration-300 py-2 `}
           >
-            <Shop variant="Bold" className="text-gray-300" />{" "}
-            <p className=" text-gray-400 text-xl  font-semibold">محصول ها</p>
+            <Shop variant="Bold" className="text-[#192655]" />{" "}
+            <p className=" text-[#F5F5F5] text-xl  font-semibold">محصول ها</p>
             <div className=" absolute bg-gray-400/40 opacity-0 duration-200  group-hover:opacity-100 h-fit p-1 rounded top-10 right-4  text-xs w-fit z-40">
               <p>دسته بندی اضافه نمایید</p>
             </div>
@@ -91,30 +104,40 @@ function Navbar({ param }: { param?: string }) {
         ) : (
           <Link href={`/${getProfile?.data?.profile?.shopName}/products `}>
             <li
-              className={` rounded-lg flex gap-3 hover:bg-[#3C5B6F]/70 p-2  duration-300 py-2 `}
+              className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300  ${
+                pathApp === "products" ? "bg-[#FF6600]" : null
+              } `}
             >
-              <Shop variant="Bold" className="text-white" />{" "}
-              <p className=" text-white text-xl  font-semibold">محصول ها</p>
+              <Shop variant="Bold" className="text-[#F5F5F5]" />{" "}
+              <p className=" text-[#F5F5F5] text-xl  font-semibold">محصول ها</p>
             </li>
           </Link>
         )}
 
         <Link href={`/${getProfile?.data?.profile?.shopName}/profile`}>
           <li
-            className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#3C5B6F]/70 p-2  duration-300 py-2 `}
+            className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300  ${
+              pathApp === "profile" ? "bg-[#FF6600]" : null
+            } `}
           >
-            <ProfileCircle variant="Bold" className="text-white" />{" "}
-            <p className=" text-white  text-xl  font-semibold">پروفایل</p>
+            <ProfileCircle variant="Bold" className="text-[#F5F5F5]" />{" "}
+            <p className=" text-[#F5F5F5]  text-xl  font-semibold">پروفایل</p>
           </li>
         </Link>
       </ul>
-      <div onClick={logout} className=" w-full cursor-pointer flex gap-3 p-2">
+      <div
+        onClick={logout}
+        className=" w-full cursor-pointer flex group gap-3 px-6 py-2"
+      >
         {/* <p className=" text-xl text-white">{shopName}</p> */}
         <LogoutCurve
           size={24}
-          className=" text-white  hover:text-[#153448]/40 duration-200"
+          variant="Bold"
+          className=" text-[#FF6600]    duration-200"
         />
-        <p className=" text-white  text-xl  font-semibold">خروج</p>
+        <p className=" text-[#FF6600] hover:text-[#F3F0CA] duration-200 text-xl  font-semibold">
+          خروج
+        </p>
       </div>
     </div>
   );
