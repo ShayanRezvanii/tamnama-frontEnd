@@ -42,7 +42,7 @@ function ProductCard({ data }: CategoryCardProps) {
 
   return (
     <div className=" flex relative flex-col  justify-center items-center group ">
-      <div className="  bg-white border shadow-lg duration-200 cursor-pointer hover:bg-[#DFD0B8]/70 w-full z-40 rounded-xl">
+      <div className="  bg-white border shadow-lg duration-200 cursor-pointer hover:bg-[#FF6600]/10 w-full z-40 rounded-xl">
         {/* delete product to future */}
         <div
           onClick={() => {
