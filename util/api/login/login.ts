@@ -20,6 +20,7 @@ export const Login = async ({
     console.log(response.data.token);
 
     Cookies.set("token", response.data.token);
+
     return response.data;
   } else if (response.data.isError) {
     throw response.data.error.description;

@@ -93,12 +93,12 @@ const ControlledInput = <T extends FieldValues>({
         <input
           disabled={disabled && disabled}
           placeholder={PlaceHolder}
-          className={`p-2 w-full h-full text-sm md:text-base bg-white    outline-none flex-1 rounded-lg border text-gray-600  placeholder:text-gray-200 bg-transparent appearance-none disabled:opacity-50 disabled:cursor-not-allowed duration-200 ${
+          className={`p-2 w-full h-full text-sm md:text-base bg-white    outline-none flex-1 rounded-lg border text-gray-600  placeholder:text-gray-300 bg-transparent appearance-none disabled:opacity-50 disabled:cursor-not-allowed duration-200 ${
             type === "password" ? "pl-12" : ""
           }  ${
             error && !disabled
               ? "border-error-500 focus:border-error-500"
-              : "border-gray-100 focus:border-gray-600 hover:border-gray-300"
+              : "border-gray-400 focus:border-gray-600 hover:border-gray-300"
           } ${shebaField ? "relative" : null} `}
           id={id}
           value={value}

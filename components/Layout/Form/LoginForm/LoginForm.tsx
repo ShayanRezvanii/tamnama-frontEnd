@@ -16,17 +16,24 @@ import {
 import { Login } from "@/util/api/login/login";
 import { SubmitHandler } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
-import { useRouter } from "next/navigation";
-
+import { redirect, useRouter } from "next/navigation";
+import Cookies from "js-cookie";
 function LoginForm() {
   const router = useRouter();
   const [reset, setReset] = useState();
   const login = useMutation({
     mutationFn: Login,
     onSuccess(data, variables, context) {
-      setTimeout(() => {
-        router.refresh();
-      }, 2000);
+      console.log(data);
+
+      if (data.name) {
+        setTimeout(() => {
+          // router.refresh();
+          Cookies.set("shopName", data.name);
+          // router.push(`/${data.name}`);
+          router.push(`${data.name}`);
+        }, 2000);
+      }
     },
     onError(error, variables, context) {
       console.log(error);
@@ -71,7 +78,7 @@ function LoginForm() {
             <div className="mt-7">
               <PrimaryBtn
                 type="submit"
-                className=" bg-[#3C5B6F] font-semibold text-xl w-full p-2 rounded-xl text-white"
+                // className=" font-semibold text-xl w-full p-2 rounded-xl"
                 isloading={login.isPending}
                 disabled={login.isPending}
               >

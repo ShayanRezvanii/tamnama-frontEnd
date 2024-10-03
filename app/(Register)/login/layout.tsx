@@ -6,11 +6,10 @@ import React, { ReactNode } from "react";
 
 function Layout({ children }: { children: ReactNode }) {
   const Session = useSestion();
-  console.log(Session);
 
-  if (Session) {
-    redirect("/");
-  }
+  // if (Session) {
+  //   redirect("/");
+  // }
   return <div>{children}</div>;
 }
 
