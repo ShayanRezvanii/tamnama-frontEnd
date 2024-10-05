@@ -1,11 +1,6 @@
 /** @format */
 "use client";
 import React, { useState } from "react";
-// Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
-// Bootstrap Bundle JS
-import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Button } from "react-bootstrap";
 import ControlledInput from "@/components/Layout/Inputs/ControlledInput";
 import { Form } from "@/components/Layout/Form/Form";
 import PrimaryBtn from "@/components/Layout/Buttons/PrimaryBtn";
