@@ -94,7 +94,7 @@ function AddCategory({ param }: { param: string }) {
                   />
                 </div>
 
-                <div className="w-full flex flex-col xl:flex-row gap-x-4">
+                <div className="w-full flex flex-col xl:flex-row mt-4 gap-x-4">
                   <Controller
                     control={control}
                     name="Icon"

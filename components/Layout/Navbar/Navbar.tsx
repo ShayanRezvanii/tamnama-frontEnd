@@ -9,7 +9,7 @@ import {
   Shop,
 } from "iconsax-react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { redirect, usePathname, useRouter } from "next/navigation";
 import React, { Profiler, useEffect, useState } from "react";
 import Cookies from "js-cookie";
 import useGetCategoryList from "@/util/hooks/Category/GetCategory";
@@ -37,22 +37,27 @@ function Navbar({ param }: { param?: string }) {
   }, []);
   console.log(pathApp);
   console.log(pa);
+  console.log(getProfile?.data?.profile === null);
+
+  useEffect(() => {
+    if (getProfile?.data?.profile === null && shopName) {
+      router.push(`/${shopName}/profile`);
+    }
+  }, [getProfile, shopName, router]);
 
   return (
-    <div className=" w-full  bg-[#525151] max-w-[280px] h-full items-center border-l border-[#F5F5F5]/20 p-10 flex flex-col justify-between ">
-      {getProfile?.data?.profile ? (
+    <div className=" w-full  select-none bg-[#525151] max-w-[280px] h-full items-center border-l border-[#F5F5F5]/20 p-10 flex flex-col justify-between ">
+      {getProfile?.data?.profile !== null ? (
         <div className=" flex-col flex gap-4 justify-center items-center">
           <div className=" w-28 h-28 relative shadow-lg rounded-2xl">
             <Image
-              src={`http://localhost:8000/api/${getProfile?.data?.profile?.imageURL}`}
+              src={`http://172.25.1.29:8000/api/${getProfile?.data?.profile?.imageURL}`}
               alt="profile"
               fill
               className=" rounded-2xl"
             />
           </div>
-          <p className=" font-semibold text-[#F5F5F5]">
-            {getProfile?.data?.profile?.shopName}
-          </p>
+          <p className=" font-semibold text-[#F5F5F5]">{shopName}</p>
         </div>
       ) : (
         <svg className="h-10 w-10 mt-10 animate-spin" viewBox="3 3 18 18">
@@ -66,45 +71,79 @@ function Navbar({ param }: { param?: string }) {
           ></path>
         </svg>
       )}
+
       <ul className=" flex flex-col gap-6">
-        <Link href={`/${getProfile?.data?.profile?.shopName}`}>
+        {getProfile?.data?.profile === null ? (
           <li
-            className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300 
+            className={` cursor-not-allowed rounded-lg flex gap-3  px-4 py-2  duration-300 
               ${pathApp === undefined ? "bg-[#FF6600]" : null}`}
           >
-            <Home variant="Bold" className="text-[#F5F5F5]" />
-            <p className=" text-xl text-[#F5F5F5] font-semibold">خانه</p>
+            <Home variant="Bold" className="text-[#6f6e6d]" />
+            <p className=" text-xl text-[#6f6e6d] font-semibold">خانه</p>
           </li>
-        </Link>
-        <Link href={`/${getProfile?.data?.profile?.shopName}/category`}>
+        ) : (
+          <Link href={`/${shopName}`} className={` no-underline`}>
+            <li
+              className={`  ${
+                getProfile?.data?.profile === null
+                  ? " cursor-not-allowed"
+                  : "cursor-pointer"
+              }   rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300 
+              ${pathApp === undefined ? "bg-[#FF6600]" : null}`}
+            >
+              <Home variant="Bold" className="text-[#F5F5F5]" />
+              <p className=" text-xl text-[#F5F5F5] font-semibold">خانه</p>
+            </li>
+          </Link>
+        )}
+
+        {getProfile?.data?.profile === null ? (
           <li
-            className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300  ${
+            className={` cursor-not-allowed  rounded-lg flex gap-3  px-4 py-2  duration-300  ${
               pathApp === "category" ? "bg-[#FF6600]" : null
             } `}
           >
-            <Category variant="Bold" className="text-[#F5F5F5]" />
+            <Category variant="Bold" className="text-[#6f6e6d]" />
 
-            <p className=" text-[#F5F5F5] outline-none text-xl  font-semibold">
+            <p className=" text-[#6f6e6d] outline-none text-xl  font-semibold">
               دسته بندی ها
             </p>
           </li>
-        </Link>
+        ) : (
+          <Link href={`/${shopName}/category`} className=" no-underline">
+            <li
+              className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-2 py-2  duration-300  ${
+                pathApp === "category" ? "bg-[#FF6600]" : null
+              } `}
+            >
+              <Category variant="Bold" className="text-[#F5F5F5]" />
+
+              <p className=" text-[#F5F5F5] outline-none text-xl  font-semibold">
+                دسته بندی ها
+              </p>
+            </li>
+          </Link>
+        )}
 
         {/* product condition */}
-        {getCategoryList?.data?.allCategory?.categories?.length === 0 ? (
+
+        {getCategoryList?.data?.allCategory?.categories?.length === 0 ||
+        getProfile?.data?.profile === null ? (
           <li
-            className={` relative rounded-lg flex gap-3 p-2 group cursor-pointer duration-300 py-2 `}
+            className={` relative rounded-lg flex gap-3 p-2 group cursor-not-allowed duration-300 py-2 `}
           >
-            <Shop variant="Bold" className="text-[#192655]" />{" "}
-            <p className=" text-[#F5F5F5] text-xl  font-semibold">محصول ها</p>
-            <div className=" absolute bg-gray-400/40 opacity-0 duration-200  group-hover:opacity-100 h-fit p-1 rounded top-10 right-4  text-xs w-fit z-40">
-              <p>دسته بندی اضافه نمایید</p>
-            </div>
+            <Shop variant="Bold" className="text-[#6f6e6d]" />
+            <p className=" text-[#6f6e6d] text-xl  font-semibold">محصول ها</p>
+            {getCategoryList?.data?.allCategory?.categories?.length === 0 ? (
+              <div className=" absolute bg-gray-400/40 opacity-0 duration-200  group-hover:opacity-100 h-fit p-1 rounded top-10 right-4  text-xs w-fit z-40">
+                <p>دسته بندی اضافه نمایید</p>
+              </div>
+            ) : null}
           </li>
         ) : (
-          <Link href={`/${getProfile?.data?.profile?.shopName}/products `}>
+          <Link href={`/${shopName}/products `} className="no-underline">
             <li
-              className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300  ${
+              className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-2 py-2  duration-300  ${
                 pathApp === "products" ? "bg-[#FF6600]" : null
               } `}
             >
@@ -114,9 +153,9 @@ function Navbar({ param }: { param?: string }) {
           </Link>
         )}
 
-        <Link href={`/${getProfile?.data?.profile?.shopName}/profile`}>
+        <Link href={`/${shopName}/profile`} className="no-underline">
           <li
-            className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-4 py-2  duration-300  ${
+            className={` cursor-pointer  rounded-lg flex gap-3 hover:bg-[#FF6600] px-2 py-2  duration-300  ${
               pathApp === "profile" ? "bg-[#FF6600]" : null
             } `}
           >

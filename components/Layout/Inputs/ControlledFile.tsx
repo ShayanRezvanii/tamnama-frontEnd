@@ -52,7 +52,7 @@ const ControlledFile = <T extends FieldValues>({
     },
     onError: (error, variables, context) => {
       //   setResult(true);
-      console.log(error);
+      alert(error);
     },
   });
 

@@ -2,10 +2,10 @@
 
 import type { Metadata, Viewport } from "next";
 import Localfont from "next/font/local";
-import "./globals.css";
+import "@/app/globals.css";
 import TenstackProvider from "@/util/config/Providers/TenstackProvider";
 
-import img from "@/public/Favicon.ico";
+import localFont from "next/font/local";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -20,6 +20,16 @@ export const metadata: Metadata = {
   // },
 };
 
+const iranianSans = localFont({
+  src: [
+    {
+      path: "../public/fonts/IRANSans_Medium.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -27,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa" dir="rtl" suppressHydrationWarning>
-      <body>
+      <body className={iranianSans.className}>
         <TenstackProvider>{children}</TenstackProvider>
       </body>
     </html>
