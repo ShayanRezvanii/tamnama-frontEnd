@@ -69,7 +69,7 @@ function AddProfile({ param }: { param?: string }) {
     },
     onError: (error, variables, context) => {
       setResult(true);
-      console.log(error);
+      alert(error);
     },
   });
 
@@ -116,7 +116,7 @@ function AddProfile({ param }: { param?: string }) {
                       id="firstColor"
                       label="رنگ اولیه "
                       required
-                      onChange={(e) => setFirstColor(e?.target?.value)}
+                      onChange={(e) => console.log(e)}
                       setValue={setValue}
                       PlaceHolder="نام محصول را وارد کنید"
                       type="text"
@@ -196,7 +196,7 @@ function AddProfile({ param }: { param?: string }) {
 
                   <div className=" w-full max-w-[420px]">
                     <ControlledFile
-                      label="لوگو"
+                      label="لوگو - jpg یا png"
                       setValue={setValue}
                       register={register}
                       param={"lounge"}
