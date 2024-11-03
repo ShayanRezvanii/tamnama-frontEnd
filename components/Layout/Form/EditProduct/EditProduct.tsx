@@ -199,7 +199,11 @@ function EditProduct({ param }: any) {
 
             <div className="w-full xl:justify-end flex xl:items-center">
               <div className="w-full">
-                <PrimaryBtn type="submit" onClick={handleClick}>
+                <PrimaryBtn
+                  isloading={editProductMutation.isPending}
+                  type="submit"
+                  onClick={handleClick}
+                >
                   تایید
                 </PrimaryBtn>
               </div>

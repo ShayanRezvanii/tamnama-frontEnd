@@ -164,7 +164,7 @@ function AddProduct({ param }: { param: string }) {
                     required
                     onChange={(e) => setInputValue(e.target.value)}
                     setValue={setValue}
-                    PlaceHolder="قیمت محصول خود را وارد نمایید"
+                    PlaceHolder="قیمت را وارد کنید (فقط عدد)"
                     type="text"
                     error={errors.price?.message}
                   />
@@ -189,6 +189,7 @@ function AddProduct({ param }: { param: string }) {
                 <PrimaryBtn
                   type="submit"
                   onClick={handleClick}
+                  isloading={addProductMutation.isPending}
                   // isloading={addProductMutation.isPending}
                   // disabled={addProductMutation.isPending || cats.length <= 0}
                 >

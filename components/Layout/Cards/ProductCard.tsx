@@ -38,8 +38,6 @@ function ProductCard({ data }: CategoryCardProps) {
     },
   });
 
-  console.log(data);
-
   return (
     <div className=" flex relative flex-col  justify-center items-center group ">
       <div className="  bg-white border shadow-lg duration-200 cursor-pointer hover:bg-[#FF6600]/10 w-full z-40 rounded-xl">
@@ -59,10 +57,10 @@ function ProductCard({ data }: CategoryCardProps) {
           <div className=" w-full  h-40 relative ">
             <Image
               alt="product-image"
-              className=" object-cover rounded-tr-xl rounded-tl-xl"
+              className=" object-cover rounded-tr-xl  rounded-tl-xl"
               fill
-	      unoptimized
-              src={`https://tamback.nsjsoft.ir/api/${data.imageURL}`}
+              unoptimized
+              src={`${process.env.NEXT_PUBLIC_API_BASE_URLIMAGE}${data?.imageURL}`}
             />
           </div>
 

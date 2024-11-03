@@ -99,7 +99,18 @@ const ControlledFile = <T extends FieldValues>({
           />
           <PrimaryBtn onClick={onFileUpload}>
             <DocumentUpload />
-            {/* آپلود تصویر */}
+            {/* <p className={‍‍`${addImageMutation.isPending ? "درحال بارگذاری..." : "آپلود تصویر"}`}>
+              {addImageMutation.isPending ? "درحال بارگذاری..." : "آپلود تصویر"}
+            </p> */}
+            <p
+              className={`${
+                addImageMutation.isPending ? " animate-pulse" : null
+              }`}
+            >
+              {addImageMutation.isPending
+                ? "درحال بارگذاری..."
+                : "  آپلود تصویر"}
+            </p>
           </PrimaryBtn>
         </div>
 
