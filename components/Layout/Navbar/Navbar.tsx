@@ -51,10 +51,11 @@ function Navbar({ param }: { param?: string }) {
         <div className=" flex-col flex gap-4 justify-center items-center">
           <div className=" w-28 h-28 relative shadow-lg rounded-2xl">
             <Image
-              src={`http://172.25.1.29:8000/api/${getProfile?.data?.profile?.imageURL}`}
+              src={`https://tamback.nsjsoft.ir/api/${getProfile?.data?.profile?.imageURL}`}
               alt="profile"
               fill
-              className=" rounded-2xl"
+              unoptimized
+              className=" rounded-2xl object-cover"
             />
           </div>
           <p className=" font-semibold text-[#F5F5F5]">{shopName}</p>

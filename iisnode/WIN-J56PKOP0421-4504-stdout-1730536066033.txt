@@ -1,0 +1,70 @@
+> Ready on http://tamnama.nsjsoft.ir:\\.\pipe\9f6a5f8c-8744-4612-aa16-62707fb68f05
+ ○ Compiling / ...
+ ✓ Compiled / in 12.6s (598 modules)
+ ✓ Compiled in 1469ms (286 modules)
+ GET / 307 in 14423ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 12s (2771 modules)
+ GET /login 500 in 12623ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1088ms (1457 modules)
+ GET /favicon.ico 200 in 1383ms
+ GET /login 500 in 351ms
+ GET / 307 in 228ms
+ GET /login 500 in 87ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.9s (2767 modules)
+ GET /_next/static/css/app/(Register)/login/bootstrap.min.css.map 404 in 3493ms
+ GET /login 500 in 222ms
+ GET /login 500 in 156ms
+   Reload env: .env
+ ✓ Compiled in 11.3s (2764 modules)
+ ○ Compiling /[cafeName] ...
+ ✓ Compiled /[cafeName] in 5.7s (2858 modules)
+undefined
+t-cafe
+false
+ GET /t-cafe 200 in 11695ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 953ms (1498 modules)
+ GET /favicon.ico 200 in 1203ms
+undefined
+t-cafe
+false
+ GET /t-cafe 200 in 686ms
+ ○ Compiling /[cafeName]/category ...
+ ✓ Compiled /[cafeName]/category in 2.6s (2903 modules)
+category
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+undefined
+ GET /t-cafe/category 200 in 406ms
+ GET /favicon.ico 200 in 92ms
+   Reload env: .env
+ ✓ Compiled in 3.3s (2873 modules)

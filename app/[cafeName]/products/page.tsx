@@ -84,6 +84,7 @@ function Page({
               <Image
                 alt=""
                 src={searchFound}
+unoptimized
                 className=" text-center rounded-2xl w-32 h-32 mt-40 text-3xl text-[#525151]"
               />
               <p className=" text-lg font-bold">محصولی یافت نشد</p>
