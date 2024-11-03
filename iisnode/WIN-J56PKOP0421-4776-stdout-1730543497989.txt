@@ -1,0 +1,2121 @@
+> Ready on http://tamnama.nsjsoft.ir:\\.\pipe\ed3d2de3-29ad-45ef-8464-f42343948aa0
+ ○ Compiling /login ...
+ ✓ Compiled /login in 19.5s (2785 modules)
+ GET / 307 in 20594ms
+ GET /login 500 in 20593ms
+ GET / 307 in 88ms
+ GET /login 500 in 83ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 918ms (1457 modules)
+ GET /favicon.ico 200 in 1194ms
+ ○ Compiling /[cafeName] ...
+ ✓ Compiled /[cafeName] in 2.5s (2895 modules)
+ ○ Compiling /[cafeName]/profile ...
+ ✓ Compiled /[cafeName]/profile in 14.1s (3487 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 2.1s (3490 modules)
+ GET /_next/static/css/app/(Register)/login/bootstrap.min.css.map 404 in 2552ms
+undefined
+t-cafe
+false
+ GET /t-cafe 200 in 219ms
+ ○ Compiling /[cafeName]/category ...
+ ✓ Compiled /[cafeName]/category in 1615ms (3505 modules)
+ ○ Compiling /[cafeName]/category/add ...
+ ✓ Compiled /[cafeName]/category/add in 1505ms (3517 modules)
+ GET /_next/static/css/app/(Register)/login/bootstrap.min.css.map 404 in 654ms
+profile
+sofragol
+false
+undefined
+undefined
+{ name: '01:00', value: '01:00' }
+{ name: '01:30', value: '01:30' }
+{ name: '02:00', value: '02:00' }
+{ name: '02:30', value: '02:30' }
+{ name: '03:00', value: '03:00' }
+{ name: '03:30', value: '03:30' }
+{ name: '04:00', value: '04:00' }
+{ name: '04:30', value: '04:30' }
+{ name: '05:00', value: '05:00' }
+{ name: '05:30', value: '05:30' }
+{ name: '06:00', value: '06:00' }
+{ name: '06:30', value: '06:30' }
+{ name: '07:00', value: '07:00' }
+{ name: '07:30', value: '07:30' }
+{ name: '08:00', value: '08:00' }
+{ name: '08:30', value: '08:30' }
+{ name: '09:00', value: '09:00' }
+{ name: '09:30', value: '09:30' }
+{ name: '10:00', value: '10:00' }
+{ name: '10:30', value: '10:30' }
+{ name: '11:00', value: '11:00' }
+{ name: '11:30', value: '11:30' }
+{ name: '12:00', value: '12:00' }
+{ name: '12:30', value: '12:30' }
+{ name: '13:00', value: '13:00' }
+{ name: '13:30', value: '13:30' }
+{ name: '14:00', value: '14:00' }
+{ name: '14:30', value: '14:30' }
+{ name: '15:00', value: '15:00' }
+{ name: '15:30', value: '15:30' }
+{ name: '16:00', value: '16:00' }
+{ name: '16:30', value: '16:30' }
+{ name: '17:00', value: '17:00' }
+{ name: '17:30', value: '17:30' }
+{ name: '18:00', value: '18:00' }
+{ name: '18:30', value: '18:30' }
+{ name: '19:00', value: '19:00' }
+{ name: '19:30', value: '19:30' }
+{ name: '20:00', value: '20:00' }
+{ name: '20:30', value: '20:30' }
+{ name: '21:00', value: '21:00' }
+{ name: '21:30', value: '21:30' }
+{ name: '22:00', value: '22:00' }
+{ name: '22:30', value: '22:30' }
+{ name: '23:00', value: '23:00' }
+{ name: '23:30', value: '23:30' }
+{ name: '00:00', value: '00:00' }
+{ name: '00:30', value: '00:30' }
+undefined
+{ name: '01:00', value: '01:00' }
+{ name: '01:30', value: '01:30' }
+{ name: '02:00', value: '02:00' }
+{ name: '02:30', value: '02:30' }
+{ name: '03:00', value: '03:00' }
+{ name: '03:30', value: '03:30' }
+{ name: '04:00', value: '04:00' }
+{ name: '04:30', value: '04:30' }
+{ name: '05:00', value: '05:00' }
+{ name: '05:30', value: '05:30' }
+{ name: '06:00', value: '06:00' }
+{ name: '06:30', value: '06:30' }
+{ name: '07:00', value: '07:00' }
+{ name: '07:30', value: '07:30' }
+{ name: '08:00', value: '08:00' }
+{ name: '08:30', value: '08:30' }
+{ name: '09:00', value: '09:00' }
+{ name: '09:30', value: '09:30' }
+{ name: '10:00', value: '10:00' }
+{ name: '10:30', value: '10:30' }
+{ name: '11:00', value: '11:00' }
+{ name: '11:30', value: '11:30' }
+{ name: '12:00', value: '12:00' }
+{ name: '12:30', value: '12:30' }
+{ name: '13:00', value: '13:00' }
+{ name: '13:30', value: '13:30' }
+{ name: '14:00', value: '14:00' }
+{ name: '14:30', value: '14:30' }
+{ name: '15:00', value: '15:00' }
+{ name: '15:30', value: '15:30' }
+{ name: '16:00', value: '16:00' }
+{ name: '16:30', value: '16:30' }
+{ name: '17:00', value: '17:00' }
+{ name: '17:30', value: '17:30' }
+{ name: '18:00', value: '18:00' }
+{ name: '18:30', value: '18:30' }
+{ name: '19:00', value: '19:00' }
+{ name: '19:30', value: '19:30' }
+{ name: '20:00', value: '20:00' }
+{ name: '20:30', value: '20:30' }
+{ name: '21:00', value: '21:00' }
+{ name: '21:30', value: '21:30' }
+{ name: '22:00', value: '22:00' }
+{ name: '22:30', value: '22:30' }
+{ name: '23:00', value: '23:00' }
+{ name: '23:30', value: '23:30' }
+{ name: '00:00', value: '00:00' }
+{ name: '00:30', value: '00:30' }
+ GET /sofragol/profile 200 in 705ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1730ms (1807 modules)
+ GET / 307 in 2236ms
+ GET / 307 in 68ms
+ GET /login 500 in 99ms
+ ○ Compiling /[cafeName]/products ...
+ ✓ Compiled /[cafeName]/products in 9.5s (3534 modules)
+ ○ Compiling /[cafeName]/products/add ...
+ ✓ Compiled /[cafeName]/products/add in 1765ms (3539 modules)
+ GET /login 500 in 404ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1404ms (1806 modules)
+ GET / 307 in 1827ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 899ms (1816 modules)
+ GET /login 500 in 1301ms
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 1975ms (3525 modules)
+ GET /_next/static/css/app/(Register)/login/bootstrap.min.css.map 404 in 2508ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 265ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 82ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 924ms (1829 modules)
+ GET /favicon.ico 200 in 1151ms
+ GET /login 500 in 271ms
+ GET /favicon.ico 200 in 34ms
+ GET /login 500 in 147ms
+ GET /login 500 in 128ms
+ GET /login 500 in 129ms
+ GET /_next/static/css/app/(Register)/login/bootstrap.min.css.map 404 in 97ms
+ ○ Compiling /[cafeName] ...
+ ✓ Compiled /[cafeName] in 1178ms (1805 modules)
+products
+t-cafe
+false
+{ cafeName: 't-cafe' }
+undefined
+ GET /t-cafe/products/add 200 in 669ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 116ms
+undefined
+t-cafe
+false
+ GET /t-cafe 200 in 205ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 162ms
+ ✓ Compiled in 3.3s (3535 modules)
+ ○ Compiling /[cafeName]/category ...
+ ✓ Compiled /[cafeName]/category in 524ms (1804 modules)
+ ✓ Compiled in 3.1s (3542 modules)
+ ○ Compiling /[cafeName]/products/[id] ...
+ ✓ Compiled /[cafeName]/products/[id] in 4.8s (3532 modules)
+ ○ Compiling /[cafeName]/category ...
+ ✓ Compiled /[cafeName]/category in 1050ms (1804 modules)
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 383ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 71ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 86ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 80ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 84ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 91ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 84ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 104ms
+products
+t-cafe
+false
+ GET /t-cafe/products/3629244819177472 200 in 211ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 77ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1334ms (1816 modules)
+ GET /favicon.ico 200 in 1570ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 538ms
+ ○ Compiling /[cafeName]/category/add ...
+ ✓ Compiled /[cafeName]/category/add in 962ms (1823 modules)
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 308ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 93ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 137ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 92ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 82ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 82ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 139ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 168ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 102ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 123ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 187ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 109ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 69ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 83ms
+products
+t-cafe
+false
+ GET /t-cafe/products/3629254736609280 200 in 259ms
+products
+t-cafe
+false
+ GET /t-cafe/products/3629254736609280 200 in 145ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 85ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 135ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 86ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 126ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 88ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 96ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 86ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 132ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 132ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 77ms
+category
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+undefined
+ GET /t-cafe/category 200 in 78ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 103ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 66ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 119ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 120ms
+products
+t-cafe
+false
+{ cafeName: 't-cafe' }
+undefined
+ GET /t-cafe/products/add 200 in 172ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 99ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 122ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 111ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 87ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 101ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 98ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 108ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 110ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 71ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 146ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 99ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 77ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 141ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 81ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 107ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 133ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 89ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 72ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 83ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 132ms
+products
+t-cafe
+false
+{
+  status: [Getter],
+  fetchStatus: [Getter],
+  isPending: [Getter],
+  isSuccess: [Getter],
+  isError: [Getter],
+  isInitialLoading: [Getter],
+  isLoading: [Getter],
+  data: [Getter],
+  dataUpdatedAt: [Getter],
+  error: [Getter],
+  errorUpdatedAt: [Getter],
+  failureCount: [Getter],
+  failureReason: [Getter],
+  errorUpdateCount: [Getter],
+  isFetched: [Getter],
+  isFetchedAfterMount: [Getter],
+  isFetching: [Getter],
+  isRefetching: [Getter],
+  isLoadingError: [Getter],
+  isPaused: [Getter],
+  isPlaceholderData: [Getter],
+  isRefetchError: [Getter],
+  isStale: [Getter],
+  refetch: [Getter]
+}
+ GET /t-cafe/products 200 in 82ms

@@ -61,8 +61,8 @@ function ProductCard({ data }: CategoryCardProps) {
               alt="product-image"
               className=" object-cover rounded-tr-xl rounded-tl-xl"
               fill
-              unoptimized
-              src={`http://tamnama.nsjsoft.ir:8080/api/${data.imageURL}`}
+	      unoptimized
+              src={`https://tamback.nsjsoft.ir/api/${data.imageURL}`}
             />
           </div>
 
