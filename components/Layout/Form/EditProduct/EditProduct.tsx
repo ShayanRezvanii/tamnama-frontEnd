@@ -26,6 +26,7 @@ function EditProduct({ param }: any) {
   const [inputValue, setInputValue] = useState<string>("");
   const [cats, setCats] = useState<string[]>([]);
   const [result, setResult] = useState(false);
+  const [pending, setPending] = useState<boolean>(false);
   const singleProduct = useGetSingleProduct(param.id);
   const getCategoryList = useGetCategoryList(param.cafeName);
   const [uploadedImage, setUploadedImage] = useState();
@@ -74,22 +75,22 @@ function EditProduct({ param }: any) {
     },
   });
 
+  console.log(pending);
+
   const onSubmit: SubmitHandler<addProductSchemaType> = async (data) => {
-    if (added && uploadedImage) {
-      editProductMutation.mutate({
-        id: param.id,
-        shopName: param.cafeName,
-        category: data.category
-          ? data.category.value
-          : initialValues.category.value,
-        imageURL: uploadedImage,
-        price: data.price ? data.price : initialValues.price,
-        description: data.description
-          ? data.description
-          : initialValues.description,
-        title: data.title ? data.title : initialValues.title,
-      });
-    }
+    editProductMutation.mutate({
+      id: param.id,
+      shopName: param.cafeName,
+      category: data.category
+        ? data.category.value
+        : initialValues.category.value,
+      imageURL: initialValues?.imageURL,
+      price: data.price ? data.price : initialValues.price,
+      description: data.description
+        ? data.description
+        : initialValues.description,
+      title: data.title ? data.title : initialValues.title,
+    });
   };
 
   const handleClick = () => {
@@ -181,7 +182,8 @@ function EditProduct({ param }: any) {
                     error={errors.price?.message}
                   />
                 </div>
-                <ControlledFile
+
+                {/* <ControlledFile
                   label="تصویر محصول"
                   setValue={setValue}
                   register={register}
@@ -193,7 +195,7 @@ function EditProduct({ param }: any) {
                   }}
                   id="imageUrl"
                   error={errors.imageUrl?.message}
-                />
+                /> */}
               </div>
             </div>
 
@@ -201,7 +203,7 @@ function EditProduct({ param }: any) {
               <div className="w-full">
                 <PrimaryBtn
                   isloading={editProductMutation.isPending}
-                  type="submit"
+                  disabled={pending}
                   onClick={handleClick}
                 >
                   تایید
